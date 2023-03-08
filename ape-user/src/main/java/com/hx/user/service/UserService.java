@@ -5,5 +5,5 @@ import com.hx.user.entity.dto.UserDto;
 
 public interface UserService {
     int addUser(UserDto userDto);
-//    int updateUser(UserDto userDto);
+    int updateUser(UserDto userDto);
 }
