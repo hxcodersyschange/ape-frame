@@ -1,8 +1,8 @@
 package com.hx.user.service.impl;
 
 import com.hx.user.entity.dto.UserDto;
-import com.hx.user.entity.po.UserPo;
 import com.hx.user.mapper.UserMapper;
+import com.hx.user.entity.po.UserPo;
 import com.hx.user.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,4 +19,12 @@ public class UserServiceImpl implements UserService {
         int count = userMapper.insert(userPo);
         return count;
     }
+
+//    @Override
+//    public int updateUser(UserDto userDto) {
+//        UserPo userPo = new UserPo();
+//        BeanUtils.copyProperties(userDto,userPo);
+//        int i = userMapper.updateByName(userPo);
+//        return i;
+//    }
 }
