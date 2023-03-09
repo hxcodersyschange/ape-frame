@@ -23,3 +23,9 @@ spring:
           enabled: true
           log-slow-sql: true
           slow-sql-millis: 2000
+        wall:
+          enabled: true
+
+sql:
+  beauty:
+    show: open

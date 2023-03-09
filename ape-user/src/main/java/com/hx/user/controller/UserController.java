@@ -1,5 +1,6 @@
 package com.hx.user.controller;
 
+import com.hx.Result;
 import com.hx.user.entity.dto.UserDto;
 import com.hx.user.entity.req.UserReq;
 import com.hx.user.service.UserService;
@@ -16,16 +17,16 @@ public class UserController {
     @Autowired
     private UserService userService;
     @PostMapping("/add")
-    public Integer addUser(@RequestBody UserReq userReq){
+    public Result addUser(@RequestBody UserReq userReq){
         UserDto userDto = new UserDto();
         BeanUtils.copyProperties(userReq,userDto);
-        return   userService.addUser(userDto);
+        return Result.ok(userService.addUser(userDto));
     }
 
     @PostMapping("/update/{id}")
-    public Integer UpdateUser(@PathVariable("id") Long id, @RequestBody UserReq userReq){
+    public Result UpdateUser(@PathVariable("id") Long id, @RequestBody UserReq userReq){
         UserDto userDto = new UserDto();
         BeanUtils.copyProperties(userReq,userDto);
-        return userService.updateUser(id,userDto);
+        return Result.ok(userService.updateUser(id,userDto));
     }
 }
