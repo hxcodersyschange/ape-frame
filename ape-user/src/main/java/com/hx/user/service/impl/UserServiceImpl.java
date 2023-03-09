@@ -21,10 +21,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int updateUser(UserDto userDto) {
+    public int updateUser(Long id,UserDto userDto) {
         UserPo userPo = new UserPo();
-        BeanUtils.copyProperties(userDto,userPo);
-        int i = userMapper.updateByName(userPo);
-        return i;
+        userPo.setId(id);
+       BeanUtils.copyProperties(userDto,userPo);
+        return userMapper.updateById(userPo);
     }
 }
