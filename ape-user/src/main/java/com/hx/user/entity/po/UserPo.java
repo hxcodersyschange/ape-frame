@@ -18,7 +18,7 @@ public class UserPo {
     private String createBy;
     @TableField(value="create_time",fill = FieldFill.INSERT)
     private Date createTime;
-    @TableField(value = "update_by",fill =FieldFill.INSERT_UPDATE)
+    @TableField(value = "update_by",fill = FieldFill.INSERT_UPDATE)
     private String updateBy;
     @TableField(value = "update_time",fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
