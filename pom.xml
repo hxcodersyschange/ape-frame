@@ -11,6 +11,7 @@
         <module>ape-common</module>
         <module>ape-common/ape-common-web</module>
         <module>ape-common/ape-common-mybatisplus</module>
+        <module>ape-common/ape-common-redis</module>
     </modules>
     <version>1.0.0-SNAPSHOT</version>
     <properties>
@@ -35,6 +36,11 @@
         <dependency>
             <groupId>com.hx</groupId>
             <artifactId>ape-common-mybatisplus</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hx</groupId>
+            <artifactId>ape-common-swagger</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -1,4 +1,4 @@
-package com.hx;
+package com.hx.bean;
 
 public class ResultMessage {
     public static final String SUCCESS = "成功";

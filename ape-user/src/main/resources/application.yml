@@ -25,7 +25,20 @@ spring:
           slow-sql-millis: 2000
         wall:
           enabled: true
-
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: delete_flag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
 sql:
   beauty:
     show: open
+swagger:
+  title: ape-frame/user
+  name: hx
+  url: https://github.com/hxcodersyschange/ape-frame
+  email: 1726349213@qq.com
+  description: 自用脚手架
+  version: 1.0
+  base-package: com.hx

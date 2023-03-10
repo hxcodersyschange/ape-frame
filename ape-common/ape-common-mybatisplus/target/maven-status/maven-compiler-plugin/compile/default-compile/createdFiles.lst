@@ -1,4 +1,5 @@
 com\hx\entity\BaseEntity.class
 com\hx\inteceptor\SqlBeautyInterceptor.class
 com\hx\config\MyBatisPlusConfig.class
+com\hx\entity\PageResult.class
 com\hx\handler\MyMetaObjectHandler.class

@@ -1,4 +1,4 @@
-package com.hx;
+package com.hx.bean;
 
 import lombok.Data;
 
@@ -19,6 +19,7 @@ public class Result<T> implements Serializable {
         result.setMessage(ResultMessage.SUCCESS);
         return result;
     }
+
     public static  Result ok(Integer code,String message){
         Result result = new Result();
         result.setSUCCESS(true);
@@ -26,6 +27,7 @@ public class Result<T> implements Serializable {
         result.setMessage(message);
         return result;
     }
+
     public static  <T> Result ok(Integer code,String message,T data){
         Result result = new Result();
         result.setSUCCESS(true);
@@ -34,6 +36,7 @@ public class Result<T> implements Serializable {
         result.setData(data);
         return result;
     }
+
     public static  <T>  Result ok(T data){
         Result result = new Result();
         result.setSUCCESS(true);
@@ -42,6 +45,7 @@ public class Result<T> implements Serializable {
         result.setData(data);
         return result;
     }
+
     public static  Result fail(){
         Result result = new Result();
         result.setSUCCESS(false);
@@ -49,6 +53,7 @@ public class Result<T> implements Serializable {
         result.setMessage(ResultMessage.ERROR);
         return result;
     }
+
     public static  Result fail(Integer code,String message){
         Result result = new Result();
         result.setSUCCESS(false);
@@ -56,6 +61,7 @@ public class Result<T> implements Serializable {
         result.setMessage(message);
         return result;
     }
+
     public static  <T> Result fail(Integer code,String message,T data){
         Result result = new Result();
         result.setSUCCESS(false);
@@ -64,6 +70,7 @@ public class Result<T> implements Serializable {
         result.setData(data);
         return result;
     }
+
     public static  <T>  Result fail(T data){
         Result result = new Result();
         result.setSUCCESS(false);
