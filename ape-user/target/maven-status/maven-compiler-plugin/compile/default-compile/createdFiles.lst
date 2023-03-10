@@ -1,4 +1,5 @@
 com\hx\user\controller\UserController.class
+com\hx\user\entity\req\UserListReq.class
 com\hx\user\service\UserService.class
 com\hx\user\entity\dto\UserDto.class
 com\hx\user\mapper\UserMapper.class

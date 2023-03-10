@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ape-common" />
-        <module name="ape-user" />
         <module name="ape-common-mybatisplus" />
+        <module name="ape-user" />
         <module name="ape-common-web" />
       </profile>
     </annotationProcessing>
